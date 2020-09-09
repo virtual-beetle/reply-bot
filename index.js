@@ -20,6 +20,10 @@ client.on('message', async message => {
             console.error('One of the emojis failed to react.');
         }
     }
+
+    if (message.content.includes('lmao')) {
+        message.react('😂');
+    }
 });
 
 client.login(token);
