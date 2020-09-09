@@ -1,2 +1,25 @@
+require('dotenv').config();
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
+const token = process.env.TOKEN_KEY;
+
+client.once('ready', () => {
+    console.log('Ready!');
+});
+
+client.on('message', async message => {
+    if (message.content.includes('bruh')) {
+        try {
+            await message.react('🇧');
+            await message.react('🇷');
+            await message.react('🇺');
+            await message.react('🇭');
+        } catch (error) {
+            console.error('One of the emojis failed to react.');
+        }
+    }
+});
+
+client.login(token);
