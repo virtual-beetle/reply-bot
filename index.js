@@ -24,6 +24,10 @@ client.on('message', async message => {
     if (message.content.includes('lmao')) {
         message.react('😂');
     }
+
+    if (message.content.includes('oof')) {
+        message.react('753386121123201164');
+    }
 });
 
 client.login(token);
