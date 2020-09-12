@@ -28,6 +28,10 @@ client.on('message', async message => {
     if (message.content.includes('oof')) {
         message.react('753386121123201164');
     }
+
+    if (message.content.includes('rip')) {
+        message.react('754217664808878141');
+    }
 });
 
 client.login(token);
