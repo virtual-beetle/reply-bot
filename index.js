@@ -34,7 +34,7 @@ client.on("message", async (message) => {
   }
 
   if (
-    message.channel == "757708878203977888" &&
+    message.channel === "757708878203977888" &&
     message.content == "oof among_us"
   ) {
     var targetMember = message.get(message.author);
