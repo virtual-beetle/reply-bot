@@ -34,11 +34,11 @@ client.on("message", async (message) => {
   }
 
   if (
-    message.channel === "757708878203977888" &&
+    message.channel.id === "757708878203977888" &&
     message.content == "oof among_us"
   ) {
     var targetMember = message.get(message.author);
-    message.reply("What is the Among Us code?...");
+    message.reply("What is the game code?...");
 
     message.channel
       .awaitMessages((m) => m.author.id == message.author.id, {
