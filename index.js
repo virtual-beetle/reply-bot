@@ -57,6 +57,8 @@ client.on("message", async (message) => {
                 "`"
             )
             .setTimestamp();
+
+          message.channel.send(embedMsg);
         } else {
           message.reply("That is not a valid code");
         }
